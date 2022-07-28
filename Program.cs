@@ -7,46 +7,61 @@ namespace Ex26_19_Takahashi
         {
 
             Console.WriteLine("28だよ");
-                Box box = new Box(
-                    InputUtility.InputFloat("幅"),
-                    InputUtility.InputFloat("高さ"),
-                    InputUtility.InputFloat("奥行"));
-                
-                /*
-                 * 別バージョン
-                var width = InputUtility.InputFloat("幅");
-                var height = InputUtility.InputFloat("高さ");
-                var depth = InputUtility.InputFloat("奥行");
-                Box box = new Box(width, height, depth);
-                */
+            TriangularPrism trianglerprism = new TriangularPrism(
+                InputUtility.InputFloat("辺1の長さ"),
+                InputUtility.InputFloat("辺2の長さ"),
+                InputUtility.InputFloat("辺3の長さ"));
 
-                Console.WriteLine($"Boxの表面積={box.GetSurface()}\nBoxの体積={box.GetVlueme()}");
+            /*
+             * 別バージョン
+            var width = InputUtility.InputFloat("幅");
+            var height = InputUtility.InputFloat("高さ");
+            var depth = InputUtility.InputFloat("奥行");
+            Box box = new Box(width, height, depth);
+            */
+
+            Console.WriteLine($"Boxの表面積={trianglerprism.GetSurface()}\nBoxの体積={trianglerprism.GetVlueme()}");
 
         }
     }
 
-    class Box
+    /*class TriangularPrism
     {
-        float width;
+        float bottom;
+        float triangleHeigth;
         float height;
-        float depth;
 
-        public Box(float width, float height, float depth)
+        public TriangularPrism(float edge1, float edge2, float edge3)
         {
-            this.width = width;
+            this.bottom = bottom;
+            this.triangleHeigth = triangleHeight;
             this.height = height;
-            this.depth = depth;
-
         }
+
+        public TriangularPrism(float edge1, float edge2, int angle)
+        {
+            this.bottom = bottom;
+            this.triangleHeigth = triangleHeight;
+            this.height = height;
+        }
+
+        public TriangularPrism(float edge1, int angle1, int angle2)
+        {
+            this.bottom = bottom;
+            this.triangleHeigth = triangleHeight;
+            this.height = height;
+        }
+
 
         public float GetSurface()
         {
-            return (width * height + depth * height + width * depth) * 2;
+            return bottom * triangleHeigth + (bottom + triangleHeigth + (float)Math.Sqrt(bottom * bottom + triangleHeigth * triangleHeigth)) * height;
         }
 
         public float GetVlueme()
         {
-            return width * height * depth;
+            return bottom * triangleHeigth / 2 * height;
         }
-    }
+    }*/
+
 }

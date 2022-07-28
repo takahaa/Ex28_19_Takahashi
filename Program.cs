@@ -5,6 +5,8 @@ namespace Ex26_19_Takahashi
     {
         static void Main(string[] args)
         {
+
+            Console.WriteLine("28だよ");
                 Box box = new Box(
                     InputUtility.InputFloat("幅"),
                     InputUtility.InputFloat("高さ"),

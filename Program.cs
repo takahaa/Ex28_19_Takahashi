@@ -3,65 +3,85 @@ namespace Ex26_19_Takahashi
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
 
-            Console.WriteLine("28だよ");
-            TriangularPrism trianglerprism = new TriangularPrism(
-                InputUtility.InputFloat("辺1の長さ"),
-                InputUtility.InputFloat("辺2の長さ"),
-                InputUtility.InputFloat("辺3の長さ"));
+            Console.WriteLine("1か2を選択してください。");
+            Console.WriteLine("1、底面の底辺・高さから三角形の面積を求める");
+            Console.WriteLine("2、底面の３辺の長さから三角形の面積を求める");
 
-            /*
-             * 別バージョン
-            var width = InputUtility.InputFloat("幅");
-            var height = InputUtility.InputFloat("高さ");
-            var depth = InputUtility.InputFloat("奥行");
-            Box box = new Box(width, height, depth);
-            */
+            int num = int.Parse(Console.ReadLine());
 
-            Console.WriteLine($"Boxの表面積={trianglerprism.GetSurface()}\nBoxの体積={trianglerprism.GetVlueme()}");
+            if (num == 1)
+            {
+                TriangularPrism trianglerprism = new TriangularPrism(
+                    InputUtility.InputFloat("底面の底辺の長さ"),
+                    InputUtility.InputFloat("底面の高さ"),
+                    InputUtility.InputFloat("柱の長さ"));
+
+            }
+            else {
+                TriangularPrism trianglerprism = new TriangularPrism(
+                    InputUtility.InputFloat("底面の辺の長さ1"),
+                    InputUtility.InputFloat("底面の辺の長さ2"),
+                    InputUtility.InputFloat("底面の辺の長さ3"),
+                    InputUtility.InputFloat("柱の長さ"));
+
+            }
+
+
+            Console.WriteLine($"三角柱の表面積={trianglerprism.GetSurface()}\n三角柱の体積={trianglerprism.GetVlueme()}");
 
         }
     }
 
-    /*class TriangularPrism
+    class TriangularPrism
     {
-        float bottom;
-        float triangleHeigth;
+        float BottomLength;
+        float length1;
+        float length2;
+        float length3;
+        float BottomHeight;
         float height;
 
-        public TriangularPrism(float edge1, float edge2, float edge3)
+        float keep;
+        float bottom;
+        float side;
+
+        public TriangularPrism(float BottomLength, float BottomHeight, float height)
         {
-            this.bottom = bottom;
-            this.triangleHeigth = triangleHeight;
+            this.BottomLength = BottomLength;
+            this.BottomHeight = BottomHeight;
             this.height = height;
+
+            bottom = BottomLength * BottomHeight / 2;
+            side = BottomLength + BottomHeight + (float)Math.Sqrt(BottomLength * BottomLength + BottomHeight * BottomHeight) * height;
         }
 
-        public TriangularPrism(float edge1, float edge2, int angle)
+        public TriangularPrism(float length1, float length2, float length3, float height)
         {
-            this.bottom = bottom;
-            this.triangleHeigth = triangleHeight;
+            this.length1 = length1;
+            this.length2 = length2;
+            this.length3 = length3;
             this.height = height;
-        }
 
-        public TriangularPrism(float edge1, int angle1, int angle2)
-        {
-            this.bottom = bottom;
-            this.triangleHeigth = triangleHeight;
-            this.height = height;
+            keep = (length1 + length2 + length3)/ 2;
+            bottom = (float)Math.Sqrt(keep*((keep - length1)*(keep - length2)*(keep - length3)));
+            side = (length1 + length2 + length3) * height;
+            Console.WriteLine(bottom);
         }
 
 
         public float GetSurface()
         {
-            return bottom * triangleHeigth + (bottom + triangleHeigth + (float)Math.Sqrt(bottom * bottom + triangleHeigth * triangleHeigth)) * height;
+            return bottom * 2 + side;
         }
 
         public float GetVlueme()
         {
-            return bottom * triangleHeigth / 2 * height;
+            return bottom * height;
         }
-    }*/
+    }
 
 }

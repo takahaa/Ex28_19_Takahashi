@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\222E005\\Downloads\\Ex26\\新しいフォルダー (3)\\Ex_2022_Template.csproj": {}
+    "C:\\Users\\222E005\\Downloads\\Ex26\\新しいフォルダー (5)\\Ex_2022_Template.csproj": {}
   },
   "projects": {
-    "C:\\Users\\222E005\\Downloads\\Ex26\\新しいフォルダー (3)\\Ex_2022_Template.csproj": {
+    "C:\\Users\\222E005\\Downloads\\Ex26\\新しいフォルダー (5)\\Ex_2022_Template.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\222E005\\Downloads\\Ex26\\新しいフォルダー (3)\\Ex_2022_Template.csproj",
+        "projectUniqueName": "C:\\Users\\222E005\\Downloads\\Ex26\\新しいフォルダー (5)\\Ex_2022_Template.csproj",
         "projectName": "Ex_2022_Template",
-        "projectPath": "C:\\Users\\222E005\\Downloads\\Ex26\\新しいフォルダー (3)\\Ex_2022_Template.csproj",
+        "projectPath": "C:\\Users\\222E005\\Downloads\\Ex26\\新しいフォルダー (5)\\Ex_2022_Template.csproj",
         "packagesPath": "C:\\Users\\222E005\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\222E005\\Downloads\\Ex26\\新しいフォルダー (3)\\obj\\",
+        "outputPath": "C:\\Users\\222E005\\Downloads\\Ex26\\新しいフォルダー (5)\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\222E005\\AppData\\Roaming\\NuGet\\NuGet.Config",

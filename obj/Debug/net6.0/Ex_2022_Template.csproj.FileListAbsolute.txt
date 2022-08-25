@@ -1,0 +1,15 @@
+C:\Users\222E005\Downloads\Ex26\新しいフォルダー (5)\bin\Debug\net6.0\Ex_2022_Template.exe
+C:\Users\222E005\Downloads\Ex26\新しいフォルダー (5)\bin\Debug\net6.0\Ex_2022_Template.deps.json
+C:\Users\222E005\Downloads\Ex26\新しいフォルダー (5)\bin\Debug\net6.0\Ex_2022_Template.runtimeconfig.json
+C:\Users\222E005\Downloads\Ex26\新しいフォルダー (5)\bin\Debug\net6.0\Ex_2022_Template.dll
+C:\Users\222E005\Downloads\Ex26\新しいフォルダー (5)\bin\Debug\net6.0\Ex_2022_Template.pdb
+C:\Users\222E005\Downloads\Ex26\新しいフォルダー (5)\obj\Debug\net6.0\Ex_2022_Template.csproj.AssemblyReference.cache
+C:\Users\222E005\Downloads\Ex26\新しいフォルダー (5)\obj\Debug\net6.0\Ex_2022_Template.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\222E005\Downloads\Ex26\新しいフォルダー (5)\obj\Debug\net6.0\Ex_2022_Template.AssemblyInfoInputs.cache
+C:\Users\222E005\Downloads\Ex26\新しいフォルダー (5)\obj\Debug\net6.0\Ex_2022_Template.AssemblyInfo.cs
+C:\Users\222E005\Downloads\Ex26\新しいフォルダー (5)\obj\Debug\net6.0\Ex_2022_Template.csproj.CoreCompileInputs.cache
+C:\Users\222E005\Downloads\Ex26\新しいフォルダー (5)\obj\Debug\net6.0\Ex_2022_Template.dll
+C:\Users\222E005\Downloads\Ex26\新しいフォルダー (5)\obj\Debug\net6.0\refint\Ex_2022_Template.dll
+C:\Users\222E005\Downloads\Ex26\新しいフォルダー (5)\obj\Debug\net6.0\Ex_2022_Template.pdb
+C:\Users\222E005\Downloads\Ex26\新しいフォルダー (5)\obj\Debug\net6.0\Ex_2022_Template.genruntimeconfig.cache
+C:\Users\222E005\Downloads\Ex26\新しいフォルダー (5)\obj\Debug\net6.0\ref\Ex_2022_Template.dll
